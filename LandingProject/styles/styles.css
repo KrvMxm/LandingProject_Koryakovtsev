@@ -103,8 +103,7 @@ body * {
 .FirstBackGroundImage {
     background-image: url('../images/FirstBackgroundImage.jpg');
     background-size: cover;
-    height: 707px;
-    padding-top: 194px; 
+    height: 707px; 
     position: relative;  
 }
 
@@ -122,10 +121,11 @@ body * {
     position: relative;
     margin: 0;
     z-index: 1;
-    /* width: 676.11px;
+    width: 676.11px;
     height: 305px;
-    left: 135px;
-    top: 277px; */
+    left: 134px;
+    top: 274px;
+
 }
 
 .title {
@@ -164,19 +164,20 @@ body * {
 }
 
 .block2_1_content {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    size: 50%;
-    
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 623px;
+    height: 24px;
+    /* position: relative;
+    top: 107px;
+    left: 624px; */
 }
 
-.block2_2_content {
+.block2_content{
     position: relative;
-    /* width: 1171px;
-    height: 552.28px;
-    left: 132px;
-    top: 107px; */
+    width: 253px;
+    margin: 0px;
 }
 
 .block2_content_item{
@@ -188,26 +189,38 @@ body * {
     color: #FFFFFF;
 }
 
+.block2_content_item_title_main{
+    width: 253px;
+
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.block2_1_content_item_title{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
 .block2_content_item_title{
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
+    font-size: 18px;
+    line-height: 25px;
     text-transform: uppercase;
     
-    color: #E3B873; 
-}
-
-.block2_content_item_title_main{
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
+    color: #E3B873;
 }
 
 .block2_content_item_faded{
@@ -220,10 +233,29 @@ body * {
     color: rgba(255, 255, 255, 0.3); 
 }
 
+.block2_2_1_content{
+    position: relative;
+}
+
+.block2_2_2_content{
+    position: relative;
+}
+
+.block2_2_content{
+    display: flex;
+    justify-content: space-between;
+}
+
 .SecondBlockImage{
     background-image: url('../images/SecondBlockImage.png');
     background-size: cover;
-    height: 707px;
-    padding-top: 194px; 
+    height: 482px;
+    width: 679px;
+
+     
     position: relative; 
+}
+
+.block2_content_main{
+    display: flex;
 }
