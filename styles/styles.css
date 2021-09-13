@@ -157,6 +157,7 @@ h1 span{
 
 .Step_2{
     background-color: black;
+    margin-bottom: 217px;
 }
 
 .Step_2_1_Content{
@@ -345,12 +346,22 @@ h1 span{
     justify-content: center;
     
 }
+
+.Step_2_3_Video_Content{
+    position: relative;
+    z-index: 1;
+}
+
 .Image_Video{
     background-image: url('../images/SecondBlockImage2.png');
     width: 817px;
     height: 434px;
     margin-left: auto;
     margin-right: auto;
+    
+    /* background-size: cover; */
+    position: relative;
+    bottom: -217px;
 }
 .Image_PlayButton{
     background-image: url('../images/Vector\ _Playbotton.svg');
@@ -358,8 +369,7 @@ h1 span{
     height: 85px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: -217px;
+    background-size: cover;
 }
 
 .BorderLine{
@@ -385,35 +395,91 @@ h1 span{
     margin-bottom: 91px;
 }
 
-.SubmitPhoneContent{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 33px;
+.Step_2_3_Form{
+    margin-bottom: 76px;
 }
-
-.InputLine{
-    width: 231px;
-    height: 1px;
-    background: #E3B873;
-    border: 1px solid rgba(54, 54, 54, 0.3);
-    box-sizing: border-box;
-    transform: matrix(1, 0, 0, -1, 0, 0);    
+.Step_2_3_Form_Input_Label{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
 }
-
-.TextAgreement{
+.input.Step_2_3_Form_Text{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 163.68%;
-    color: #181818;  
+    line-height: 23px;
+    color: #363636;  
+}
+.Step_2_3_Form_Text{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    background-color: transparent;
+    outline: none;
+}
+.Step_2_3_Form_Text::placeholder{
+    color: #363636; 
+}
+.Step_2_3_Form_Container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+.Step_2_3_Form .button{
+    padding-left: 75px;
+    padding-right: 76px;
+    font-size: 13px;
+    line-height: 27px;
+}
+.Step_2_3_Form_Button_Container{
+    margin: 0%;
+}
+.Step_2_3_Form_item{
+    margin-right: 58px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Step_2_3_Form_Agree_Container{
+    display: flex;
+    justify-content: center;
+}
+.Step_2_3_Form_Agree_Text{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818; 
+}
+.Form_Checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;    
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+}
+.Form_Checkbox_style{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #E3B873;
+    margin-left: -29px;
+}
+.Form_Checkbox:checked + .Form_Checkbox_style::before{
+    content: "";
+    width: 16px;
+    height: 14px;
+    background-color: #E3B873;
+    position: absolute;
+    background-image: url('../images/Vector_Check.svg');
+    background-size: cover;
 }
 
-.AgreementContent{
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 76px;
-}
 
 .subtitle{
     font-family: Yeseva One;
@@ -497,7 +563,7 @@ h1 span{
 
 .Step_3_1{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .Step_3_1_Contacts_Container{
@@ -533,6 +599,7 @@ h1 span{
 .Step_3_1_BackgroundImage {
     background-image: url('../images/Image_Step_3_1.png');
     background-size: cover;
+    width: 1006px;
     height: 645px; 
     position: relative;
 }
@@ -798,7 +865,7 @@ input.Form_Input_Text{
     line-height: 23px; 
     color: white;
 }
-.Form_Agree_Text{
+.Step_3_1_Form_Agree_Text{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;

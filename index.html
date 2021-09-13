@@ -109,9 +109,12 @@
             <div class="Image_line2"></div>
           </div>
         </div>
-
-        <div class="Image_Video"></div>
-        <div class="Image_PlayButton"></div>
+        <section class="Image_Video">
+          <div class="container Step_2_3_Video_Content">
+            <div class="Image_PlayButton"></div>
+          </div>
+          <div class="Step_3_3_Background_Image_overlay"></div>
+        </section>
       </section>
 
       <div class="BorderLine"></div>
@@ -121,23 +124,29 @@
         You can watch the live broadcast from one of our facilities!
         Leave a request below and you will receive a link to the broadcast.
       </div>
-      <div class="container SubmitPhoneContent">
-        <div class="input">
-          <div>Name</div>
-          <div>What is your name</div>
-          <div class="InputLine"></div>
+      <form action="#" class="Step_2_3_Form">
+        <div class="container Step_2_3_Form_Container">
+          <div class="Step_2_3_Form_item">
+            <label class="Step_2_3_Form_Input_Label">Name</label>
+            <input class="Step_2_3_Form_Text" placeholder="What is your name?" type="text" name="username" value=""/>
+          </div>
+          <div class="Step_2_3_Form_item">
+            <label class="Step_2_3_Form_Input_Label">Phone</label>
+            <input class="Step_2_3_Form_Text" placeholder="Your phone number:" type="tel" name="telnumber" value="">
+          </div>
+          <div class="container Step_2_3_Form_Button_Container"> 
+            <button class="button" type="submit">Submit</button>
+          </div>
         </div>
-        <div class="input">
-          <div>Phone</div>
-          <div>Your phone number</div>
-          <div class="InputLine"></div>
+        <div class="container Step_2_3_Form_Agree_Container">         
+          <label class="Step_2_3_Form_Agree_Text">
+            <input class="Form_Checkbox" checked type="checkbox" name="agree" value="yes">
+            <span class="Form_Checkbox_style"></span>
+            I agree to the processing of personal data
+          </label>
         </div>
-        <button class="button">Submit</button>
-      </div>
-      <div class="container AgreementContent">
-        <div class="Checkbox">•</div>
-        <div class="TextAgreement">I agree to the processing of personal data</div>
-      </div>
+      </form>
+
       <div class="subtitle">Types of repair</div>
       <div class="container TypesOfRepairContent">
         <div class="Image_line2"></div>
@@ -228,9 +237,12 @@
                   <input class="Form_Input_Text" placeholder="Your email" type="text" name="email" value=""/>
                 </div>
               </div>
-              <div class="container Step_3_1_Agree_Container">
-                <input checked type="checkbox" name="agree" value="yes">
-                <label class="Form_Agree_Text">I agree to the processing of personal data</label>
+              <div class="container Step_2_3_Form_Agree_Container">         
+                <label class="Step_3_1_Form_Agree_Text">
+                  <input class="Form_Checkbox" checked type="checkbox" name="agree" value="yes">
+                  <span class="Form_Checkbox_style"></span>
+                  I agree to the processing of personal data
+                </label>
               </div>
               <div class="container EndFormButton_Container"> 
                 <button class="button" type="button">Call the measurer</button>
@@ -309,9 +321,7 @@
           <div class="container Step_3_3_Content">
             <div class="container Step_3_3_Form_Block">
               <form action="#" class="EndForm">
-
                 <h1 class="EndForm_Title">Have any questions?</h1>
-
                 <div class="container EndForm_NamePhone_Container">
                   <div>
                     <label class="Form_Input_Label">Name</label>
@@ -322,17 +332,17 @@
                     <input class="Form_Input_Text" placeholder="Your phone number:" type="tel" name="telnumber" value="">
                   </div>
                 </div>
-                <br>
                 <div>
                   <label class="Form_Input_Label">Question</label>
                   <input class="Form_Input_Text" placeholder="I want to know:" type="text" name="question" value="">
                 </div>
-                <br>
-                <div>
-                  <input checked type="checkbox" name="agree" value="yes">
-                  <label class="Form_Agree_Text">I agree to the processing of personal data</label>
+                <div class="container Step_2_3_Form_Agree_Container">         
+                  <label class="Step_3_1_Form_Agree_Text">
+                    <input class="Form_Checkbox" checked type="checkbox" name="agree" value="yes">
+                    <span class="Form_Checkbox_style"></span>
+                    I agree to the processing of personal data
+                  </label>
                 </div>
-                <br>
                 <div class="container EndFormButton_Container"> 
                   <button class="button" type="submit">Submit</button>
                 </div>
