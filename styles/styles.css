@@ -103,6 +103,9 @@ body * {
     text-decoration: none;
     color:  white;
 }
+.header_navigation_item a:hover{
+    color: #E3B873;
+}
 
 .FirstBackGroundImage {
     background-image: url('../images/FirstBackgroundImage.jpg');
@@ -157,7 +160,7 @@ h1 span{
 
 .Step_2{
     background-color: black;
-    margin-bottom: 217px;
+    margin-bottom: 280px;
 }
 
 .Step_2_1_Content{
@@ -358,20 +361,30 @@ h1 span{
     height: 434px;
     margin-left: auto;
     margin-right: auto;
-    
-    /* background-size: cover; */
     position: relative;
     bottom: -217px;
+    margin-top: -217px;
 }
 .Image_PlayButton{
     background-image: url('../images/Vector\ _Playbotton.svg');
-    width: 85px;
-    height: 85px;
+    width: 150px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
+    position: relative;
+    top: 140px;
 }
-
+.Step_2_3_Background_Image_overlay
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);  
+}
 .BorderLine{
     width: 55px;
     background: #E3B873;
@@ -424,7 +437,7 @@ h1 span{
 .Step_2_3_Form_Text::placeholder{
     color: #363636; 
 }
-.Step_2_3_Form_Container{
+.Step_2_3_Form_Content{
     display: flex;
     justify-content: center;
     margin-bottom: 33px;
@@ -435,7 +448,7 @@ h1 span{
     font-size: 13px;
     line-height: 27px;
 }
-.Step_2_3_Form_Button_Container{
+.Step_2_3_Form_Button_Content{
     margin: 0%;
 }
 .Step_2_3_Form_item{
@@ -443,7 +456,7 @@ h1 span{
     margin-top: auto;
     margin-bottom: auto;
 }
-.Step_2_3_Form_Agree_Container{
+.Step_2_3_Form_Agree_Content{
     display: flex;
     justify-content: center;
 }
@@ -564,26 +577,27 @@ h1 span{
 .Step_3_1{
     display: flex;
     justify-content: center;
+    margin-bottom: 71px;
 }
 
-.Step_3_1_Contacts_Container{
+.Step_3_1_Contacts_Content{
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
-    /* Возможно неверно */
-    width: 408px;
 }
 .Step_3_1_Contacts_item{ 
     padding-bottom: 48px;
 }
-.Step_3_1_Agree_Container{
+.Step_3_1_Agree_Content{
     margin-bottom: 39px;
 }
 .Step_3_1_Form{
     background-color: black;
-    padding: 49px;
+    padding-right: 49px;
+    padding-left: 49px;
     padding-top: 28px;
     padding-bottom: 27px;
+    margin-bottom: 38px;
 }
 .Step_3_1_Form_Title{
     font-family: Nunito Sans;
@@ -595,6 +609,43 @@ h1 span{
     color: #FFFFFF;
     margin-bottom: 39px;
 }
+.Step_3_1_Form_Agree_Content{
+    display: flex;
+    margin-left: 29px;
+    margin-bottom: 39px;  
+}
+.Step_3_1_Form_Button_Content{
+    display: flex;
+    justify-content: right;
+}
+
+.Step_3_1_Text_Circle{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Step_3_1_Text_Normal{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636; 
+}
+
+.Step_3_1_List_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.Step_3_1_List_Item{
+    display: flex;
+    justify-content: space-between;  
+}
 
 .Step_3_1_BackgroundImage {
     background-image: url('../images/Image_Step_3_1.png');
@@ -602,6 +653,34 @@ h1 span{
     width: 1006px;
     height: 645px; 
     position: relative;
+    
+}
+.Step_3_1_Image_Circle{
+    background-image: url('../images/Vector\ _Circle.svg');
+    width: 84px;
+    height: 84px; 
+    background-size: cover;
+}
+.Step_3_1_Image_Pig{
+    background-image: url('../images/Vector_Pig.svg');
+    width: 72px;
+    height: 72px;
+    /* background-size: 100%;     */
+}
+
+.Step_3_1_Pig_Content{
+    display: flex;
+}
+.Step_3_1_Text_Pig{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .Image_clients{
@@ -736,15 +815,7 @@ h1 span{
 
 
 
-.Step_3_3_Form_Block{
-    background-color: black;
-    position: relative;
-    bottom: 222px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 883px;
-    height: 445px;
-}
+
 
 .Adress_text{
     font-family: Yeseva One;
@@ -756,6 +827,7 @@ h1 span{
     text-transform: uppercase;
     color: #E3B873;
     margin-bottom: 26px;
+    margin-top: 52px;
 }
 
 .Adress_Icons_Content{
@@ -817,7 +889,16 @@ h1 span{
     flex-shrink: 0; 
       
 }
-
+.Step_3_3_Form_Block{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 883px;
+    height: 445px;
+    position: relative;
+    top: -227px; 
+    margin-bottom: -227px;
+}
 .EndForm{
     padding-top: 34px;
     margin-bottom: 34px;
@@ -836,10 +917,23 @@ h1 span{
     margin-top: 0px;
     margin-bottom: 46px;
 }
-.EndForm_NamePhone_Container{
+.EndForm_NamePhone_Content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 49px;
+}
+.EndForm_Question_Content{
+    margin-bottom: 46px;   
+}
+.Step_EndForm_Agree_Content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.EndFormButton_Content{
+    display: flex;
+    justify-content: center;
 }
 .Form_Input_Label{
     font-family: Nunito Sans;
@@ -876,10 +970,7 @@ input.Form_Input_Text{
 .Form_Input_Text::placeholder{
     color: #FFFFFF;
 }
-.EndFormButton_Container{
-    margin-left: 50%;
-    margin-left: 50%;
-}
+
 
 
 
