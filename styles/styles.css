@@ -176,7 +176,6 @@ h1 span{
 
 .block2_content{
     position: relative;
-    width: 442px;
     margin: 0px;
 }
 
@@ -257,8 +256,9 @@ h1 span{
 .SecondBlockImage{
     background-image: url('../images/Image_Slider1.png');
     height: 482px;
-    width: 679px;
+    /* width: 679px; */
     margin: 0px;
+    max-width: 100%;
 }
 
 .Step_2_1_1_Content{
@@ -359,8 +359,10 @@ h1 span{
 
 .Image_Video{
     background-image: url('../images/SecondBlockImage2.png');
-    width: 817px;
     height: 434px;
+    width: 817px;
+    /* max-width: 100%;
+    background-size: cover; */
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -558,7 +560,7 @@ h1 span{
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-
+    padding-left: 40px;
     color: #363636;
 }
 .Step_2_Final_list_item{
@@ -627,7 +629,6 @@ h1 span{
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    text-align: center;
     color: #FFFFFF;
 }
 .Step_3_1_Text_Normal{
@@ -637,37 +638,64 @@ h1 span{
     font-size: 14px;
     line-height: 19px;
     color: #363636; 
+    padding-top: 11px;
 }
 
 .Step_3_1_List_Content{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: column;   
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 117px;
+    margin-bottom: 54px;
 }
 .Step_3_1_List_Item{
-    display: flex;
-    justify-content: space-between;  
+    display: flex; 
+    
+    margin-bottom: 102px;
+    margin-left: 249px;
 }
 
 .Step_3_1_BackgroundImage {
     background-image: url('../images/Image_Step_3_1.png');
     background-size: cover;
-    width: 1006px;
-    height: 645px; 
+    width: 1006px; 
     position: relative;
-    
+    margin-right: 131px;
 }
 .Step_3_1_Image_Circle{
-    background-image: url('../images/Vector\ _Circle.svg');
-    width: 84px;
-    height: 84px; 
-    background-size: cover;
+    width: 50px;
+    height: 50px; 
+    clip-path: circle();
+    background: #E3B873;
+    padding-top: 5px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 15px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
 }
 .Step_3_1_Image_Pig{
     background-image: url('../images/Vector_Pig.svg');
+    width: 40px;
+    height: 33px;
+    background-size: cover;   
+    margin: auto;
+    margin-top: 19px;
+}
+
+.Step_3_1_Image_Pig_Background{
     width: 72px;
     height: 72px;
-    /* background-size: 100%;     */
+    clip-path: circle();
+    background: #E3B873;
+    margin-right: 25px; 
 }
 
 .Step_3_1_Pig_Content{
@@ -814,10 +842,6 @@ h1 span{
     border: 0.75px solid #FFFFFF; 
     /* margin-right: 17px; */
 }
-
-
-
-
 
 .Adress_text{
     font-family: Yeseva One;
@@ -973,10 +997,6 @@ input.Form_Input_Text{
     color: #FFFFFF;
 }
 
-
-
-
 .footer{
     background-color: black;
 }
-

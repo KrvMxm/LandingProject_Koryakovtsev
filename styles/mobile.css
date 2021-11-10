@@ -1,0 +1,231 @@
+
+@media (max-width: 767px) {
+    .container{
+        max-width: none;
+        /* margin: 0 18px; */
+        /* padding: 0 18px; */
+    }
+    .logo{
+        margin-left: 18px;
+    }
+    .header_navigation{
+        content-visibility: hidden;      
+    }
+    .button_navigation{
+        content-visibility: hidden; 
+        visibility: hidden;
+    }
+    .block1_content {
+        padding-top: 85px;
+        padding-bottom: unset;
+        padding-left: unset;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .Step_1_1_Title {
+        font-size: 23px;
+        line-height: 31px;
+        margin-bottom: 16px;
+    }
+    .block1_text{
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+    .Step_1_1_Buttons_Content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .button_step_1_1{
+       margin-bottom: 26px; 
+    }
+    .button_transparent{
+        margin-bottom: 61px;
+        margin-left: 0;     
+    }
+    .Step_2 {
+        margin-bottom: 0;
+        padding-bottom: 28px;
+    }
+    .Step_2_1_Content{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .Step_2_1_Content {
+        padding-top: unset;
+    }
+    .Step_2_1_1_Content {
+        margin-top: 0;
+    }
+    .Step_2_1_1_Title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 22px;
+        margin-top: 36px;
+        text-align: center;
+    }
+    .Step_2_1_1_Text_Undertitle{
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .Step_2_1_2_Content{
+        content-visibility: hidden;
+    }
+    .block2_arrows{
+        content-visibility: hidden; 
+    }
+    .Text_facility {
+        font-size: 11px;
+        line-height: 19px;
+        padding-left: 18px;
+        padding-right: 18px;
+        /* padding-bottom: 61px; */
+        margin-bottom: 0;
+        text-align: center;    
+        width: auto;
+        background-color: black;
+        color: white;
+    }
+    .BorderLine{
+        background-color: black;
+    }
+    .Step_2_3_Form{
+        background-color: black;
+    }
+    .Step_2_3_Form_Content{
+        flex-direction: column;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .Step_2_3_Form_Input_Label{
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .Step_2_3_Form_Text{
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .Step_2_3_Form_Text::placeholder{
+        color: #FFFFFF; 
+    }
+    .Step_2_3_Form_item{
+        margin-top: 63px;
+    }
+    .button_Step_2_3_Form{
+        margin-top: 107px;
+        margin-bottom: -57px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .Step_2_3_Form_Agree_Text{
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF; 
+        margin-top: -100px;
+    }
+    .Step_2_Final_Content {
+        flex-direction: column;
+    }
+    .Step_2_1_1_Content {
+        flex-direction: column;
+    }
+    .subtitle{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .Step_2_Final_Content{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .subtitle_OurClients {
+        content-visibility: hidden; 
+        margin: 0 0; 
+    }
+    .OurClientsContent{
+        content-visibility: hidden;
+        margin: 0 0; 
+    }
+    .Text_clients{
+        content-visibility: hidden;
+        margin: 0 0;
+    }
+    .Step_3_1 {
+        content-visibility: hidden;
+        margin: 0 0;
+    }
+    .Step_3_2_Content{
+        content-visibility: hidden;
+        margin: 0 0;
+    }
+    .Step_3_3_Form_Block {
+        width: auto;
+        height: auto;
+        top: auto;
+        margin-bottom: auto;
+    }
+    .EndForm {
+        padding-top: unset;
+        margin-bottom: 34px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .EndForm_NamePhone_Content {
+        flex-direction: column;
+        align-items: unset;
+        margin-bottom: 0;
+    }
+    .EndForm_NamePhone_Content div{
+        margin-bottom: 63px;
+    }
+    .EndForm_Question_Content {
+        margin-bottom: 22px;
+    }
+    .Step_EndForm_Agree_Content {
+        margin-bottom: 67px;
+    }
+    .EndFormButton_Content {
+        display: grid;
+        justify-content:unset;
+    }
+    .Step_3_3_Background_Image{
+        background-image: unset;
+        background-color: black;
+        padding-bottom: 1160px;
+    }
+    .Step_3_3_Map_Content{
+        width: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-top: -660px;
+    }    
+    .Step_3_3_Adress_Content{
+        margin-top: 560px;
+    }
+    .footer{
+        content-visibility: hidden;
+    }
+    .Image_Video{
+        max-width: 100%;
+        background-size: cover;
+        width: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        bottom: 0;
+        margin-top: 0;
+    }
+}
+@media (max-height: 500px) {
+
+}
+@media (min-width: 767px) {
+
+}
+@media (min-width: 500px) {
+
+}

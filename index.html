@@ -7,6 +7,7 @@
   <!-- для отображения на телефоне --> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +33,7 @@
         <div class="number">
             +7 (928) 768-32-39
         </div>
-        <button class="button">Request a call</button>
+        <button class="button button_navigation">Request a call</button>
       </div>
     </header> 
 
@@ -47,8 +48,10 @@
             with work time saving up to 45 days and 20% from <br>
             cost of materials due to the organization of work  <br>   
           </div>
-          <button class="button">Calculate the cost</button>
-          <button class="button_transparent">Submit your application</button>
+          <div class="container Step_1_1_Buttons_Content">
+            <button class="button button_step_1_1">Calculate the cost</button>
+            <button class="button_transparent">Submit your application</button>
+        </div>
         </div>
         <div class="FirstBackGroundImage_overlay"></div>
       </section>
@@ -129,7 +132,7 @@
         You can watch the live broadcast from one of our facilities!
         Leave a request below and you will receive a link to the broadcast.
       </div>
-      <form action="#" class="Step_2_3_Form">
+      <form action="#" class="container Step_2_3_Form">
         <div class="container Step_2_3_Form_Content">
           <div class="Step_2_3_Form_item">
             <label class="Step_2_3_Form_Input_Label">Name</label>
@@ -139,9 +142,7 @@
             <label class="Step_2_3_Form_Input_Label">Phone</label>
             <input class="Step_2_3_Form_Text" placeholder="Your phone number:" type="tel" name="telnumber" value="">
           </div>
-          <div class="container Step_2_3_Form_Button_Content"> 
-            <button class="button" type="submit">Submit</button>
-          </div>
+          <button class="button button_Step_2_3_Form" type="submit">Submit</button>
         </div>
         <div class="container Step_2_3_Form_Agree_Content">         
           <label class="Step_2_3_Form_Agree_Text">
@@ -214,29 +215,21 @@
         <div class="Step_3_1">
           <section class="Step_3_1_BackgroundImage">
             <div class="container Step_3_1_List_Content">
-              <div class="container Step_3_1_List_Item">
-                <div class="Step_3_1_Image_Circle">
-                  <div class="Step_3_1_Text_Circle">01</div>
-                </div> 
-                
-                <div class="Step_3_1_Text_Normal">Our specialist will arrive for measurements per day
-                  contact, or appoint a date convenient for you</div>
+              <div class=" Step_3_1_List_Item">
+                <div class="Step_3_1_Image_Circle">01</div> 
+                <div class="Step_3_1_Text_Normal">Our specialist will arrive for measurements per day <br> contact, or appoint a date convenient for you</div>
               </div>
-              <div class="container Step_3_1_List_Item">
-                <div class="Step_3_1_Image_Circle"></div> 
-                <div class="Step_3_1_Text_Circle">02</div>
+              <div class=" Step_3_1_List_Item">
+                <div class="Step_3_1_Image_Circle">02</div> 
                 <div class="Step_3_1_Text_Normal">Free metering</div>               
               </div> 
-              <div class="container Step_3_1_List_Item">
-                <div class="Step_3_1_Image_Circle"></div> 
-                <div class="Step_3_1_Text_Circle">03</div>
+              <div class=" Step_3_1_List_Item">
+                <div class="Step_3_1_Image_Circle">03</div> 
                 <div class="Step_3_1_Text_Normal">Free consultation</div>                
               </div> 
-              <div class="container Step_3_1_List_Item">
-                <div class="Step_3_1_Image_Circle"></div> 
-                <div class="Step_3_1_Text_Circle">04</div>
-                <div class="Step_3_1_Text_Normal">Get a cost estimate and
-                  the timing of your future repairs</div>    
+              <div class=" Step_3_1_List_Item">
+                <div class="Step_3_1_Image_Circle">04</div> 
+                <div class="Step_3_1_Text_Normal">Get a cost estimate and <br> the timing of your future repairs</div>    
             </div>
           </section>
           
@@ -269,14 +262,16 @@
               </div>
             </form>
             <div class="container Step_3_1_Pig_Content">
-              <div class="Step_3_1_Image_Pig"></div>
+              <div class="Step_3_1_Image_Pig_Background">
+                <div class="Step_3_1_Image_Pig"></div>
+              </div>
               <div class="Step_3_1_Text_Pig">Help save 10 - 20% of the 
                 cost of materials</div>
             </div>
           </div>
         </div>
 
-        <div class="subtitle">Our clients</div>
+        <div class="subtitle subtitle_OurClients">Our clients</div>
         <div class="container OurClientsContent">
           <div class="Image_line2"></div>
           <div class="Image_clients"></div>
